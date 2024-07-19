@@ -1,0 +1,124 @@
+:root {
+    --blue: #c8d0db;
+    --button-blue: #799ac6;
+    --text-color: rgb(59, 60, 61);
+    --input-background: transparent;
+    --box-background: rgba(255, 255, 255, 0.1);
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: var(--box-background);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+background: #eae9e9;
+box-shadow:  20px 20px 60px #c0c8d4,
+             -20px -20px 60px #ffffff;
+}
+
+h1, p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    color: black;
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.currency select, .currency input[type='number'] {
+    background-color: var(--input-background);
+    background-color: #eae8e8;
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 5px;
+    border-bottom: 1px solid var(--text-color);
+    width: 100%;
+}
+
+.currency select {
+    background-color: var(--text-color);
+    background-color: #d6d4d4;
+    font-weight: bold;
+    text-decoration: solid;
+    color: black;
+    height: 2rem;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.currency input[type='number'] {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.swap-btn-container {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--button-blue);
+    padding: 10px 20px;
+    font-weight: bold ;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
